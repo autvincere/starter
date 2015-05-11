@@ -1,0 +1,80 @@
+/* =======================================================================
+Responsive
+========================================================================== */
+$destkop-layout-size:     1024px; // Size at which the layouts were designed (for desktop first)
+$break-xsmall:       			480px;
+$break-small:      				600px;
+$break-medium:            768px;
+$break-wide:              1200px;
+$break-tall-screen:       780px;
+
+
+/* =======================================================================
+Variables
+========================================================================== */
+$dark-purple:							#321C38;
+$rum:											#6E5C7F;
+// $ebb:											#F0EEED;
+$white:										#F2F5F0;
+$rust-red:								#EB2F25;
+$yellow:									#FAED50;
+$green:										#14A74A;
+$blue:										#4CC8ED;
+$fuchsia:									#E24598;
+
+
+
+
+// Fonts stacks
+$font-stack: 							Arial, sans-serif;
+$font-stack-alt: 					Arial, sans-serif;
+$font-stack-alt-bold: 		Arial, sans-serif;
+$font-stack-alt-xlight: 	Arial, sans-serif;
+$font-size-base: 					16px;
+$font-size-base-sm: 			13px;
+$line-height-base: 				1.5;
+
+// Typography
+$color-text: 							$dark-purple;
+$color-link: 							blue;
+$color-link-visited: 			darken($color-link, 0%);
+$color-link-hover: 				blue;
+$color-link-active: 			darken($color-link, 0%);
+
+// Highlight
+$color-selection: 				blue;
+$color-placeholder: 			#ff0000;
+
+// Font style
+$text-shadow-title:				0 0 5px rgba(0, 0, 0, 0.5);
+
+
+/* =======================================================================
+Grid
+========================================================================== */
+$susy: (
+	flow: ltr, // ltr | rtl
+	output: float, // float | isolate
+	math: fluid, // fluid | static (requires column-width)
+	column-width: 60px, // false | value
+	container: auto, // length or % | auto
+	container-position: center, // left | center | right | <length> [*2] (grid padding)
+	last-flow: to,
+	columns: 12,
+	gutters: (20px/60px),
+	gutter-position: split, // before | after | split | inside | inside-static (requires column-width)
+	global-box-sizing: content-box, // content-box | border-box (affects inside/inside-static)
+	debug: (
+		image: hide,
+		color: rgba(#66f, .25),
+		output: background, // background | overlay
+		toggle: top right,
+	),
+	use-custom: (
+		background-image: true, // look for background-image mixin
+		background-options: false, // look for background-size, -origin and -clip and other compass/bourbon mixins
+		box-sizing: true, // look for custom bix sizing mixin
+		clearfix: false, // true = look for internal clearfix before using micro clearfix
+		rem: true, // look for rem mixin
+	)
+);

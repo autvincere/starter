@@ -1,0 +1,111 @@
+// Import your custom modules in /modules
+
+.mq {
+	margin: 100px 0 0;
+	width: 1400px;
+	// border: 1px solid blue;
+	// position: relative;
+
+
+	&__scale {
+		position: relative;
+		height: 24px;
+	}
+
+	&__label {
+		position: absolute;
+		left: 0;
+		top: 0;
+		text-align: right;
+		border-right: 1px solid $dark-purple;
+		padding: 0 10px 0 0;
+		box-sizing: border-box;
+	}
+
+	&__label--xsmall {
+		@extend .mq__label;
+		width: $break-xsmall - 1;
+	}
+
+	&__label--small {
+		@extend .mq__label;
+		width: $break-small - 1;
+	}
+
+	&__label--medium {
+		@extend .mq__label;
+		width: $break-medium - 1;
+	}
+	&__label--large {
+		@extend .mq__label;
+		width: $destkop-layout-size;
+	}
+	&__label--xlarge {
+		@extend .mq__label;
+		width: $break-wide;
+	}
+
+
+
+	&__devices {
+		position: relative;
+	}
+
+	&__device {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 30px;
+		padding: 3px 10px;
+		box-sizing: border-box;
+		text-align: right;
+	}
+
+	&__device--xsmall {
+		@extend .mq__device;
+		width: $break-xsmall - 1;
+		background: $rust-red;
+		// height: 40px;
+		z-index: 6;
+	}
+
+	&__device--small {
+		@extend .mq__device;
+		width: $break-small - 1;
+		background: $fuchsia;
+		height: 60px;
+		z-index: 5;
+	}
+
+	&__device--medium {
+		@extend .mq__device;
+		width: $break-medium - 1;
+		background: $green;
+		height: 90px;
+		z-index: 4;
+	}
+
+	&__device--large {
+		@extend .mq__device;
+		width: $destkop-layout-size;
+		background: $blue;
+		height: 120px;
+		z-index: 3;
+	}
+
+	&__device--xlarge {
+		@extend .mq__device;
+		width: $break-wide;
+		background: $yellow;
+		z-index: 2;
+		height: 150px;
+	}
+
+	// &__item--xxl {
+	// 	@extend .mq__item;
+	// 	width: $break-wide;
+	// 	background: $yellow;
+	// 	z-index: 2;
+	// 	height: 150px;
+	// }
+}

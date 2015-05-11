@@ -1,0 +1,30 @@
+{
+  "name": "starter",
+  "description": "HTML, Sass, JS starter kit running on Gulp",
+  "version": "0.1.0",
+  "author": "Francis Hogue",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/francishogue/starter.git"
+  },
+  "devDependencies": {
+    "browser-sync": "*",
+    "del": "*",
+    "gulp": "https://registry.npmjs.org/gulp/-/gulp-3.8.11.tgz",
+    "gulp-autoprefixer": "*",
+    "gulp-changed": "*",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-concat": "*",
+    "gulp-imagemin": "*",
+    "gulp-jshint": "*",
+    "gulp-minify-css": "*",
+    "gulp-notify": "*",
+    "gulp-sass": "*",
+    "gulp-size": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-svg-sprite": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "jshint-stylish": "*"
+  }
+}
